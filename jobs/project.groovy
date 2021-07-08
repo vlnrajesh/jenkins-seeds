@@ -17,5 +17,4 @@ def jobName = "${project}-${branchName}".replaceAll('/','-')
     steps {
         shell('ls -l')
     }
-  }
 }
