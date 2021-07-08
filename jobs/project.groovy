@@ -1,12 +1,12 @@
 def owner = 'vlnrajesh'
 def project = 'jenkins-seeds'
-def branchName = 'master'
+def branchName = 'main'
 def jobName = "${project}-${branchName}".replaceAll('/','-')
   job(jobName) {
     scm {
         git {
             remote {
-              gitlab("${owner}/${project}")
+              github("${owner}/${project}")
             }
             branch("${branchName}")
         }
