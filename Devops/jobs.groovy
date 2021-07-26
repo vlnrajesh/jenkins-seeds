@@ -5,7 +5,7 @@ folder(environment) {
   displayName(environment)
   description("Mark XL Project")
 }
-folder(environment+"/"+Terraform) {
+folder(environment+"/Terraform") {
   displayName("Terraform")
   description("Terraform CI & CD Projects")
 }
